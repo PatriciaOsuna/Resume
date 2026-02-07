@@ -11,6 +11,7 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
+import { Certifications } from "./components/Certifications";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
@@ -22,42 +23,30 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://cv.jarocki.me/opengraph-image",
+        url: "https://media.licdn.com/dms/image/v2/D4E03AQEisyg627OJNg/profile-displayphoto-shrink_800_800/B4EZTcA4E4GYAs-/0/1738858005146?e=1766620800&v=beta&t=ANZ7HeQfIpUHbdxJA2cpyTgYj1oHaOnzI1K4_rjnnEE",
         width: 1200,
         height: 630,
         alt: `${RESUME_DATA.name}'s profile picture`,
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `${RESUME_DATA.name} - Resume`,
-    description: RESUME_DATA.about,
-    images: ["https://cv.jarocki.me/opengraph-image"],
-  },
 };
 
-/**
- * Transform social links for command menu
- */
 function getCommandMenuLinks() {
-  const links = [];
-
-  if (RESUME_DATA.personalWebsiteUrl) {
-    links.push({
-      url: RESUME_DATA.personalWebsiteUrl,
-      title: "Personal Website",
-    });
-  }
-
-  return [
-    ...links,
-    ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
-      url: socialMediaLink.url,
-      title: socialMediaLink.name,
-    })),
-  ];
+  return RESUME_DATA.contact.social.map((socialMediaLink) => ({
+    url: socialMediaLink.url,
+    title: socialMediaLink.name,
+  }));
 }
+
+const sections = [
+  { id: "about-section", title: "About" },
+  { id: "education", title: "Education" },
+  { id: "work-experience", title: "Work Experience" },
+  { id: "skills", title: "Skills" },
+  { id: "projects", title: "Projects" },
+  { id: "certifications", title: "Certifications" },
+];
 
 export default function ResumePage() {
   const structuredData = generateResumeStructuredData();
@@ -66,7 +55,6 @@ export default function ResumePage() {
     <>
       <script
         type="application/ld+json"
-        // biome-ignore lint/security/noDangerouslySetInnerHtml: Safe for JSON-LD structured data
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData),
         }}
@@ -96,15 +84,15 @@ export default function ResumePage() {
               </Suspense>
             </SectionErrorBoundary>
 
-            <SectionErrorBoundary sectionName="Work Experience">
-              <Suspense fallback={<SectionSkeleton lines={6} />}>
-                <WorkExperience work={RESUME_DATA.work} />
-              </Suspense>
-            </SectionErrorBoundary>
-
             <SectionErrorBoundary sectionName="Education">
               <Suspense fallback={<SectionSkeleton lines={3} />}>
                 <Education education={RESUME_DATA.education} />
+              </Suspense>
+            </SectionErrorBoundary>
+
+            <SectionErrorBoundary sectionName="Work Experience">
+              <Suspense fallback={<SectionSkeleton lines={6} />}>
+                <WorkExperience work={RESUME_DATA.work} />
               </Suspense>
             </SectionErrorBoundary>
 
@@ -119,11 +107,17 @@ export default function ResumePage() {
                 <Projects projects={RESUME_DATA.projects} />
               </Suspense>
             </SectionErrorBoundary>
+
+            <SectionErrorBoundary sectionName="Certifications">
+              <Suspense fallback={<SectionSkeleton lines={3} />}>
+                <Certifications certifications={RESUME_DATA.certifications} />
+              </Suspense>
+            </SectionErrorBoundary>
           </div>
         </section>
 
         <nav className="print:hidden" aria-label="Quick navigation">
-          <CommandMenu links={getCommandMenuLinks()} />
+          <CommandMenu links={getCommandMenuLinks()} sections={sections} />
         </nav>
       </main>
     </>

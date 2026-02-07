@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     default: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     template: `%s | ${RESUME_DATA.name}`,
   },
+  icons: {
+    icon: [
+      { url: "/iconpink.jpg", type: "image/jpeg", sizes: "32x32" },
+      { url: "/iconpink.jpg", type: "image/jpeg", sizes: "16x16" },
+    ],
+    shortcut: "/iconpink.jpg",
+    apple: "/iconpink.jpg",
+  },
   description: RESUME_DATA.about,
   keywords: [
     "resume",
@@ -25,7 +33,7 @@ export const metadata: Metadata = {
     "portfolio",
     RESUME_DATA.name,
     "software engineer",
-    "full stack developer",
+    "junior web developer",
     "react",
     "next.js",
     "typescript",

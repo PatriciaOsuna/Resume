@@ -1,236 +1,209 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Patricia Amahirany Osuna Sarmiento",
+  initials: "PO",
+  location: "Mazatlan, Sinaloa, Mexico",
+  locationLink: "https://www.google.com/maps/place/Mazatl%C3%A1n,+Sinaloa,+Mexico",
+  about: "Junior Full Stack Web Developer - Building responsive web and scalable web applications",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      Junior Full Stack Developer with 1 year of experience working with React, JavaScript, Node.js, 
+      and modern frontend and backend tools. I enjoy building clean, functional, and user-friendly 
+      interfaces while implementing efficient server-side logic and APIs. I’m continuously improving 
+      my skills and contributing to projects where I can deliver value and grow professionally.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
+  avatarUrl: "",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "amahiranysarmiento@gmail.com",
+    tel: "+52 6692236808",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/PatriciaOsuna",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/amahirany-sarmiento/",
         icon: "linkedin",
       },
       {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
+        name: "Instagram",
+        url: "https://www.instagram.com/patrixiasarmiento?igsh=YXVwZGFxa3BlNzF3&utm_source=qr",
+        icon: "instagram",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Universidad Autonoma de Sinaloa",
+      degree: "Bachelor's Degree in Information Systems Engineering",
+      start: "2020",
+      end: "2024",
+    },
+  ],
+  certifications: [
+    {
+      company: "Udemy",
+      title: "React 18 Course 2024",
+      badges: ["React", "Web Developer", "JavaScript", "Reusable Components"],
+      end: "2024",
+      description: 
+        "Completed a comprehensive React 18 course covering functional components, hooks, state and props management, reusable component design, and modern JavaScript practices. Gained hands-on experience building responsive and dynamic web applications.",
+    }, 
+    {
+      company: "Simplilearn",
+      title: "TypeScript Basic",
+      badges: ["TypeScript", "Code Reviews", "JavaScript", "Git/Github"],
+      end: "2025",
+      description: 
+        "Completed a foundational TypeScript course, learning type annotations, interfaces, classes, and basic object-oriented programming concepts. Gained hands-on experience integrating TypeScript with JavaScript projects and following best practices for clean and maintainable code.",
+    },
+    {
+      company: "Simplilearn",
+      title: "Angular Basic",
+      badges: ["Angular", "JavaScript", "Clean Code", "Git/Github", "Semantic Versioning"],
+      end: "2025",
+      description: 
+        "Completed a foundational course on Angular, covering component-based architecture, TypeScript integration, routing, data binding, and best practices for building maintainable and scalable web applications.",
+    },
+    {
+      company: "Desafio Latam",
+      title: "Advanced CSS",
+      badges: ["CSS", "JavaScript", "HTML", "Web Design", "Responsive"],
+      end: "2024",
+      description: 
+        "Completed an in-depth CSS course covering adaptive layouts, media queries, typography, color theory, CSS variables, and modern styling techniques to create polished and professional web interfaces.",
+    },
+    {
+      company: "Mirai Innovation Research Institute",
+      title: "Emerging Future Technology Training Program",
+      badges: ["Python", "Machine Learning", "C++"],
+      end: "2023",
+      description: 
+        "Completed an intensive training program focused on emerging technologies, including Python programming, machine learning fundamentals, and C++ development. Gained hands-on experience in data analysis, algorithm implementation, and applying AI techniques to real-world projects.",
+    },
+    {
+      company: "UNAM",
+      title: "Introduction to Artificial Intelligence",
+      badges: ["Python", "Basic", "Analytical Thinking"],
+      end: "2020",
+      description: 
+        "Completed an introductory course on Artificial Intelligence, covering Python programming, fundamental AI concepts, basic machine learning algorithms, and problem-solving techniques. Gained practical experience in designing simple AI models and analyzing data to support decision-making.",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
-      start: "2025",
-      end: null,
+      company: "QUO Logistics",
+      link: "https://quologistics.com/",
+      badges: ["Remote", "Responsive", "React", "JavaScript", "Tailwind CSS"],
+      title: "Junior Reactjs Frontend",
+      start: "May 2025",
+      end: "Sept 2025",
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
-        </>
-      ),
-    },
-    {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
-      end: "2025",
-      description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+          Developed and maintained a responsive web application for shipment management using React, JavaScript, and Tailwind CSS.
+          Built reusable and scalable front-end components, optimized application performance, and ensured cross-browser and cross-device compatibility.
           <ul className="list-inside list-disc">
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
-            </li>
+            <li>Built and enhanced interactive front-end components with React and Tailwind CSS.</li>
+            <li>Integrated RESTful APIs to fetch, display, and manage shipment data dynamically.</li>
+            <li>Ensured responsive design and cross-browser compatibility for seamless access on multiple devices.</li>
+            <li>Collaborated with backend and UX teams to implement features aligned with business requirements.</li>
+            <li>Maintained clean, reusable, and scalable code following modern front-end development best practices.</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
+      company: "NimvaCloud",
+      link: "https://nimva.cloud/",
+      badges: ["Remote", "PHP", "Vite", "TypeScript", "PostgreSQL", "Vue.js"],
+      title: "Freelancer Collaborator - Junior Full Stack",
+      start: "Sept 2025",
+      end: "Oct 2025",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          Developed and maintained a responsive web application using Vue.js, TypeScript, PHP, and PostgreSQL, ensuring efficient data handling and dynamic user interfaces.
           <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
+            <li>Built reusable and scalable front-end components with Vue.js and TypeScript.</li>
+            <li>Integrated RESTful APIs and backend services using PHP to fetch and manage application data.</li>
+            <li>Ensured responsive design and cross-browser compatibility for seamless user experience.</li>
+            <li>Collaborated with designers and backend developers to implement features aligned with business requirements.</li>
+            <li>Maintained clean, modular, and maintainable code following modern front-end and full-stack best practices.</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
+      company: "STWAR Studios",
+      link: "",
+      badges: ["Remote", "React", "JavaScript", "TypeScript", "Node.js"],
+      title: "Junior Full Stack Web Developer",
+      start: "Jul 2024",
+      end: "Feb 2025",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
+          Contributed to the development of a blockchain-based film funding platform using React, JavaScript, CSS, TypeScript, and Node.js.
           <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
+            <li>Developed and maintained responsive front-end components and interfaces with React and TypeScript</li>
+            <li>Integrated backend services and RESTful APIs using Node.js to manage platform data</li>
+            <li>Collaborated with senior developers to implement new features and resolve bugs</li>
+            <li>Assisted in testing and debugging to ensure application performance and reliability</li>
+            <li>Followed best practices for clean, maintainable, and scalable code across the stack</li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
-    },
+    }
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "React", "JavaScript", "TypeScript", "Figma", "Tailwind CSS", "UX/UI", "Design Web", "CSS", "Firebase", "PostgreSQL",
+    "Vercel", "Git / GitHub", "JSON", "Chatbots", "Error Handling", "PHP", "HTML", "Reusable Components",
+    "Docker", "Postman", "Code Reviews", "Python", "Mongo DB", "n8n", "Lazy Loading", "Supabase", "Performance Optimization", "Node.js", 
+    "Vite.js", "SQL", "Motion", "Clean Code", "Express.js", "AI Integration", "RESTful API", 
+    "C#", "Machine Learning", "Scripts"
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Test Movie Web",
+      techStack: ["React", "React Hooks", "Redux", "PostgreSQL", "API Fetch", "JavaScript", "Responsive", "CSS"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+        "This site allows you to browse the most popular movies and actors from the public tmdb API. You can also get to know each of the above better on the details pages.",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "Test Movie Web",
+        href: "https://patriciaosuna.github.io/Test/",
       },
     },
     {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
+      title: "Rick and Morty App",
+      techStack: ["React", "React Hooks", "React Context", "Axios", "JavaScript", "Tailwind CSS", "PostgreSQL", "API Fetch"],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "This site allows you to browse the most popular characters from the public Rick and Morty API. You can also get to know each character better on their detailed card.",
       link: {
-        label: "consultly.com",
+        label: "Rick and Morty App",
         href: "https://consultly.com/",
       },
     },
     {
-      title: "Minimalist CV",
+      title: "Minimalist Portfolio",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "An open source minimalist, print friendly portfolio template with a focus on readability and clean design.",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "Minimalist Portfolio",
+        href: "https://github.com/PatriciaOsuna/Resume",
+      },
+    },
+     {
+      title: "Python Training Project",
+      techStack: ["Python", "Tensorflow", "Keras", "Machine Learning", "Pandas", "Testing"],
+      description:
+        "Code divided into blocks for automation in neural networks and image training through tensorflow.keras.",
+      link: {
+        label: "Python Training Project",
+        href: "https://github.com/PatriciaOsuna/Python-Image-training-to-know-if-you-have-mama-cancer-or-not.",
       },
     },
   ],

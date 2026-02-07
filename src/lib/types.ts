@@ -2,7 +2,7 @@ import type { StaticImageData } from "next/image";
 
 export type ResumeIcon = React.ComponentType<React.SVGProps<SVGSVGElement>> | StaticImageData;
 
-export type IconType = "github" | "linkedin" | "x" | "globe" | "mail" | "phone";
+export type IconType = "github" | "linkedin" | "x" | "globe" | "mail" | "phone" | "instagram";
 
 export interface ResumeData {
   name: string;
@@ -37,6 +37,13 @@ export interface ResumeData {
     end: string | null;
     description: string | React.ReactNode;
   }>;
+  certifications: Array<{
+    company: string;
+    title: string;
+    badges: string[];
+    end: string;
+    description: string | React.ReactNode;
+  }>;
   skills: string[];
   projects: Array<{
     title: string;
@@ -47,6 +54,14 @@ export interface ResumeData {
       href: string;
     };
   }>;
+}
+
+export interface GraphQLCertification {
+  company: string;
+  title: string;
+  badges: string[];
+  end: string;
+  description: string;
 }
 
 // GraphQL compatible types (without React components)

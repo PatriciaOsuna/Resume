@@ -3,7 +3,7 @@ import Image, { type StaticImageData } from "next/image";
 import React from "react";
 import { Avatar } from "@/components/avatar";
 import { Button } from "@/components/ui/button";
-import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from "@/components/icons";
 import { XIcon } from "@/components/icons/x-icon";
 import { RESUME_DATA } from "@/data/resume-data";
 import type { ResumeIcon, IconType } from "@/lib/types";
@@ -16,6 +16,7 @@ const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElemen
   globe: GlobeIcon,
   mail: MailIcon,
   phone: PhoneIcon,
+  instagram: InstagramIcon,
 } as const;
 
 interface LocationLinkProps {
@@ -84,7 +85,7 @@ function ContactButtons({
       className="flex list-none gap-x-1 pt-1 font-mono text-sm text-foreground/80 print:hidden"
       aria-label="Contact links"
     >
-      {personalWebsiteUrl && (
+      {/* {personalWebsiteUrl && (
         <li>
           <SocialButton
             href={personalWebsiteUrl}
@@ -92,7 +93,7 @@ function ContactButtons({
             label="Personal website"
           />
         </li>
-      )}
+      )} */}
       {contact.email && (
         <li>
           <SocialButton
@@ -199,12 +200,14 @@ export function Header() {
         />
       </div>
 
-      <Avatar
-        className="size-28"
-        src={RESUME_DATA.avatarUrl}
-        alt={`${RESUME_DATA.name}'s profile picture`}
-        fallback={RESUME_DATA.initials}
-      />
+      {RESUME_DATA.avatarUrl && (
+        <Avatar
+          className="size-28"
+          src={RESUME_DATA.avatarUrl}
+          alt={`${RESUME_DATA.name}'s profile picture`}
+          fallback={RESUME_DATA.initials}
+        />
+      )}
     </header>
   );
 }

@@ -33,7 +33,7 @@ export default async function Image() {
           textAlign: "center",
         }}
       >
-        {/* biome-ignore lint/performance/noImgElement: ImageResponse context requires img element */}
+        t: ImageResponse context requires img elemen
         <img
           src={RESUME_DATA.avatarUrl}
           alt={RESUME_DATA.name}
@@ -71,11 +71,7 @@ export default async function Image() {
             gap: "1rem",
           }}
         >
-          {RESUME_DATA.contact.email && (
-            <div style={{ fontSize: "1rem", color: "#666" }}>
-              {RESUME_DATA.personalWebsiteUrl}
-            </div>
-          )}
+          {RESUME_DATA.contact.email}
         </div>
       </div>
     </div>,

@@ -173,7 +173,7 @@ export const RESUME_DATA: ResumeData = {
         "This site allows you to browse the most popular movies and actors from the public tmdb API. You can also get to know each of the above better on the details pages.",
       link: {
         label: "Test Movie Web",
-        href: "https://patriciaosuna.github.io/Test/",
+        href: "https://github.com/PatriciaOsuna/Test",
       },
     },
     {
@@ -183,7 +183,7 @@ export const RESUME_DATA: ResumeData = {
         "This site allows you to browse the most popular characters from the public Rick and Morty API. You can also get to know each character better on their detailed card.",
       link: {
         label: "Rick and Morty App",
-        href: "https://consultly.com/",
+        href: "hhttps://github.com/PatriciaOsuna/Context",
       },
     },
     {

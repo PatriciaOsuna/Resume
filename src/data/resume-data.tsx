@@ -183,7 +183,7 @@ export const RESUME_DATA: ResumeData = {
         "This site allows you to browse the most popular characters from the public Rick and Morty API. You can also get to know each character better on their detailed card.",
       link: {
         label: "Rick and Morty App",
-        href: "hhttps://github.com/PatriciaOsuna/Context",
+        href: "https://github.com/PatriciaOsuna/Context",
       },
     },
     {

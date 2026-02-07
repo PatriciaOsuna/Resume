@@ -15,7 +15,7 @@ export const RESUME_DATA: ResumeData = {
     </>
   ),
   avatarUrl: "",
-  personalWebsiteUrl: "https://jarocki.me",
+  personalWebsiteUrl: "https://resume-patricia-osuna.vercel.app/",
   contact: {
     email: "amahiranysarmiento@gmail.com",
     tel: "+52 6692236808",

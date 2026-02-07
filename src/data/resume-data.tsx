@@ -196,15 +196,5 @@ export const RESUME_DATA: ResumeData = {
         href: "https://github.com/PatriciaOsuna/Resume",
       },
     },
-     {
-      title: "Python Training Project",
-      techStack: ["Python", "Tensorflow", "Keras", "Machine Learning", "Pandas", "Testing"],
-      description:
-        "Code divided into blocks for automation in neural networks and image training through tensorflow.keras.",
-      link: {
-        label: "Python Training Project",
-        href: "https://github.com/PatriciaOsuna/Python-Image-training-to-know-if-you-have-mama-cancer-or-not.",
-      },
-    },
   ],
 } as const;

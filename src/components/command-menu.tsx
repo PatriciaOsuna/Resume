@@ -67,14 +67,7 @@ export const CommandMenu = ({ links, sections }: Props) => {
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Actions">
-            <CommandItem
-              onSelect={() => {
-                setOpen(false);
-                window.print();
-              }}
-            >
-              <span>Print</span>
-            </CommandItem>
+
           </CommandGroup>
           <CommandGroup heading="Go To">
             {sections.map(({ id, title }) => (
